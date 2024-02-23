@@ -7,12 +7,12 @@
     the images as variables */
 
             :root {
-                --header-image: url('https://dog-sama.neocities.org/images/pso2coast.png');
-                --body-bg-image: url('https://dog-sama.neocities.org/images/water2.gif');
-                --container-bg-image: url('https://dog-sama.neocities.org/images/sand.png');
-                --footer-image: url('https://dog-sama.neocities.org/images/wave.gif');
-                --container-image: url('https://dog-sama.neocities.org/images/towel.jpg');
-                --button-image: url('https://dog-sama.neocities.org/images/stone2.jpg');
+                --header-image: url('/images/pso2coast.png');
+                --body-bg-image: url('/images/water2.gif');
+                --container-bg-image: url('/images/sand.png');
+                --footer-image: url('/images/wave.gif');
+                --container-image: url('/images/towel.jpg');
+                --button-image: url('/images/stone2.jpg');
 
                 /* colors 
                 pale sandy color #FBE7C0
@@ -33,30 +33,30 @@
 
             @font-face {
                 font-family: IllusionSerif;
-                src: url("https://dog-sama.neocities.org/fonts/PixelPlay.ttf") format("truetype");
+                src: url("/fonts/PixelPlay.ttf") format("truetype");
             }
 
             @font-face {
                 font-family: IllusionSerif;
-                src: url("https://dog-sama.neocities.org/fonts/alagard.ttf") format("truetype");
+                src: url("/fonts/alagard.ttf") format("truetype");
                 font-weight: bold;
             }
 
             @font-face {
                 font-family: IllusionSerif;
-                src: url("https://dog-sama.neocities.org/fonts/IllusionSerif-Italic.ttf") format("truetype");
+                src: url("/fonts/IllusionSerif-Italic.ttf") format("truetype");
                 font-style: italic;
             }
 
             @font-face {
                 font-family: IllusionSerif;
-                src: url("https://dog-sama.neocities.org/fonts/IllusionSerif-BoldItalic.ttf") format("truetype");
+                src: url("/fonts/IllusionSerif-BoldItalic.ttf") format("truetype");
                 font-style: italic;
                 font-weight: bold;
             }
 
             body {
-                cursor: url("https://dog-sama.neocities.org/images/sparklecursor.gif"), url("https://dog-sama.neocities.org/images/rainbowcursor.png"), auto;
+                cursor: url("/images/sparklecursor.gif"), url("/images/rainbowcursor.png"), auto;
                 font-family: 'IllusionSerif';
                 font-size: 22px;
                 margin: 0;
