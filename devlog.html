@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wonderful World of Dog-Sama</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.         This makes it easier to make new pages for your site. -->
+    <link href="/style2.css" rel="stylesheet" type="text/css" media="all">
+    <script src="components/site-templates.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <div id="container">
+    
+      <template-header></template-header>
+      
+      <div id="flex">
+        <main>
+          <img src="https://dog-sama.neocities.org/images/devlogo.gif"  style="width: 100%;" alt="devlog of doom">
+          <h1>Current Project: Rascal Rumble EX</h1>
+          <a href="https://itch.io/embed-upload/9662225?color=333333"><p><strong>Run the latest build in your browser!</strong></p></a>
+          <p>Current Tasks:</p>
+          <ul>
+          <li>improve controller support for menus</li>
+          <li>adjust what happens when quitting in web build (currently everything just freezes which doesn't look pretty)</li>
+          <li>add "ready" platform and warp players into a proper match once everyone is standing on the platform</li>
+          <li>add collectable fruits</li>
+          <li>add standard cop enemy</li>
+          <li>create basic level map & game logic</li>
+          <li>create basic race track</li>
+          <li>add race logic</li>
+          </ul>
+          <p>"Finished"</p>
+          <ul>
+          <li>basic menu structure</li>
+          <li>toggle connectable ip address when hosting a server (hidden by default)</li>
+          <li>controller support</li>
+          <li>momentum based movement</li>
+          <li>dynamic surface wallrunning</li>
+          <li>split-screen and online multiplayer support</li>
+          <li>basic rascal wander ai</li>
+          <li>potentially saving and loading?</li>
+          </ul>
+          <p>We won't be done after that, but those are the most pressing tasks at the moment. The game is still incredibly early along and many adjustments need to be made to ensure what I had before works as intended on the web build. Once that's done, progress will once again start on the main gameplay loop so there's something worth playing, but dancing around jank isn't something I'm willing to do in the long run, so I want to get these issues sorted out before the build gets to a more public-facing state.</p>
+          <h1>So what even is this game?</h1>
+          <p>Rascal Rumble EX is an improved version of Rascal Rumble made from the ground up in Godot 4. This was done because the rushed nature of the first iterations' development lead to some choices that would hinder long-term progress, due to starting as a class assignment and later becoming a bit of a personal sandbox to test whatever random mechanics came to my head. So instead of running through and changing most of the core that the project was built on, it seemed better to gut it for the parts that worked and begin again in Godot 4, as it was new and shiny and had significant improvements to the multiplayer API that I could make use of.</p>
+          <h1>I understand that's what makes it "EX", but what IS it?</h1>
+          <p>Rascal Rumble is a competitive multiplayer platformer where players scavenge the city for as much fruit and gear as possible to bring back to their Rascal before time runs out, all while avoiding the cops. Once this training phase is complete, all of the trained Rascals compete in a challenge, which is usually a race. Rascals are creatures that quickly gain skills and attributes based on how well they are trained. Rascal raising has become trendy amongst a niche chunk of the population, but due to the immense amount of resources the sport requires it has been outlawed, so all activities must be held away from the watchful eyes of the police.</p>
+          <p>Story Mode sees players working together to train an individual Rascal through its journey to becoming the greatest Rascal to ever race. This is more akin to the traditional Chao Garden experience, crossed with some elements inspired by Phantasy Star Online 2's Summoner class.</p>
+          <p>Raising Race is the standard for party-play. Everyone starts with a fresh Rascal and must fight for resources amongst themselves and against the police force until time runs out. Once training is over, the Rascals compete in some sort of randomly selected challenge. A city challenge can randomly occur during the training phase to shake things up for the players. This is the mode inspired by Kirby Air Ride's City Trial mode.</p>
+          <p>Express Training is something new entirely. Being built with mobile players in mind, Express Training is a quick and effective way for players to train new rascals they can race against other players. During training, the player must choose a training location for their Rascal each day, weighing how it will improve their stats, how tired it will make them, among other factors. Every few days a race will be held, and if the player's Rascal is able to beat the competition, they can continue training. Inheriting traits from previously trained Rascals when you start can give you a head start, and bringing other Rascals with you as training buddies can also effect how well training goes. See how long you can make it, and once you're done use your newly trained Rascal to race others, or use them to assist in training an even more powerful Rascal. Finished Rascals can also molt, shedding themselves of their experience in favor of a much fresher body with a higher potential. The idea for this mode was born from a passion for the game Uma Musume, and a great feeling of shame playing that game, where you watch anime horse girls, in public.</p>
+        </main>
+        <info-sidebar></info-sidebar>
+      </div>
+      <template-footer></template-footer>
+    </div>
+  
+<!-- SCM Music Player https://www.scmplayer.net -->
+<script type="text/javascript" src="https://www.scmplayer.net/script.js" 
+data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':true,'shuffle':true,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Aquarium Park (Act 1) - Sonic Colors','url':'https://www.youtube.com/watch?v=IjtE4nPMN5g'},{'title':'Azure Blue World - Sonic Adventure','url':'https://youtu.be/_SBKj5ofGVw?si=sdxh2fwxmWW5DUQO'},{'title':'Bar Yuu Comer - Persona 5','url':'https://www.youtube.com/watch?v=868Ba0r0c84'},{'title':'Beach Bowl Galaxy - Super Mario Galaxy','url':'https://www.youtube.com/watch?v=reNIKQzwPMs&t=73s'},{'title':'Beach Theme - New Super Mario Bros. Wii','url':'https://www.youtube.com/watch?v=jRtDGwmgCR8'},{'title':'Bianco Hills - Super Mario Sunshine','url':'https://www.youtube.com/watch?v=uava_sGrvPg&t=30s'},{'title':'Big Fishes at Emerald Coast - Sonic Adventure','url':'https://youtu.be/uYaXGy8VYJE?si=4YQfpuvhdl_kuiMc'},{'title':'Bubblaine - Super Mario Odyssey','url':'https://www.youtube.com/watch?v=2GqvFXkBcts&t=30s'},{'title':'Can You Feel the Sunshine - Sonic R','url':'https://www.youtube.com/watch?v=oY9m2sHQwLs'},{'title':'Destiny Islands - Kingdom Hearts','url':'https://www.youtube.com/watch?v=_366fjO5iMc'},{'title':'Fugue 7777 - Katamari Damacy','url':'https://www.youtube.com/watch?v=XOsdLrYg66I'},{'title':'Gelato Beach - Super Mario Sunshine','url':'https://www.youtube.com/watch?v=AP3RXKRrv_U&t=33s'},{'title':'Going Through the Scorching Desert - Persona 5','url':'https://www.youtube.com/watch?v=fetLqTAcX3c'},{'title':'Hikari E (English) - One Piece','url':'https://www.youtube.com/watch?v=5svxuS3L9_s'},{'title':'Hole in One - Rhythm Heaven Fever','url':'https://www.youtube.com/watch?v=MF0L5aRUgYw'},{'title':'Monkey Billiards - Super Monkey Ball','url':'https://www.youtube.com/watch?v=sTTGJWoMnPM'},{'title':'No More What Ifs - Persona 5 Royal','url':'https://www.youtube.com/watch?v=dlZz50FA4y8'},{'title':'Oasis Area - Kirby%27s Return to Dreamland','url':'https://www.youtube.com/watch?v=giJPnaOkLiU'},{'title':'Ocean - Terraria','url':'https://www.youtube.com/watch?v=fdi06Y6oFDo&t=1s'},{'title':'On the Beach - Yoshi%27s Story','url':'https://www.youtube.com/watch?v=izNjw7Vu7zI'},{'title':'Pianta Hot Spring - Super Mario Sunshine','url':'https://www.youtube.com/watch?v=EhEdsxIWCV0'},{'title':'Pinna Park - Super Mario Sunshine','url':'https://www.youtube.com/watch?v=yXzVqMZiwPs&t=64s'},{'title':'Que Sera Sera - Katamari Damacy','url':'https://www.youtube.com/watch?v=gFLJX-T7LPk'},{'title':'Remix 2 - Rhythm Heaven','url':'https://www.youtube.com/watch?v=CT_2JP-j0XU'},{'title':'Ricco Harbor - Super Mario Sunshine','url':'https://www.youtube.com/watch?v=vQP_XXJdO80&t=46s'},{'title':'Royal Days - Persona 5 Royal','url':'https://www.youtube.com/watch?v=THkVZDSkjWM'},{'title':'Secret Course Sky & Sea - Super Mario Sunshine','url':'https://www.youtube.com/watch?v=dGPQkMRurE4'},{'title':'Splash Beach - Kirby%27s Epic Yarn','url':'https://www.youtube.com/watch?v=sY4bGCNaf8E&t=38s'},{'title':'Summer Event 2020 Song V2 - PSO2','url':'https://www.youtube.com/watch?v=7aPugKyUmSQ&t=52s'},{'title':'Summer Nostalgia - UMISEA','url':'https://www.youtube.com/watch?v=qyPmRNKmxBI'},{'title':'Surfshine Harbor - Paper Mario: Sticker Star','url':'https://youtu.be/qt2YVL8pEt0?si=BQ1atb4q6lf2AeT2'},{'title':'The Wonderful Star%27s Walk is Wonderful (Walking on a Star!) - Katamari Damacy','url':'https://www.youtube.com/watch?v=5w9fOAG5Xz8&t=2s'},{'title':'Tostarena Town - Super Mario Odyssey','url':'https://www.youtube.com/watch?v=ZXjCEqA2NZA'},{'title':'Tropical Crust - Pizza Tower','url':'https://www.youtube.com/watch?v=DRS8H_d7vdg'},{'title':'Tropical Resort (Act 1) - Sonic Colors','url':'https://www.youtube.com/watch?v=hSECFuQd4ug'},{'title':'Under The Sea - Kirby%27s Return to Dreamland','url':'https://youtu.be/XwHrjEjvNAI?si=uG61mtOWPBjaR3qp'},{'title':'Underwater Theme - New Super Mario Bros. Wii','url':'https://www.youtube.com/watch?v=idztNHePKMo'},{'title':'Vamos a Carnaval - Samba de Amigo','url':'https://www.youtube.com/watch?v=gCRvwLKb8Es'},{'title':'We Are (English) - One Piece','url':'https://www.youtube.com/watch?v=dmtK7RiIz1A&t=48s'},{'title':'Welcome to Isle Delfino - Super Mario Sunshine','url':'https://www.youtube.com/watch?v=ySlWbnBBAsg'},{'title':'Windmill Isle (Day) - Sonic Unleashed','url':'https://www.youtube.com/watch?v=2b8TKhIz_ZY'},{'title':'Windy & Ripply - Sonic Adventure','url':'https://youtu.be/oTJtkEVL-7I?si=MKEREn9pwsnN2Hsg'},{'title':'World 4 Beach Land - New Super Mario Bros. Wii','url':'https://www.youtube.com/watch?v=Yi-gX_sgd1k'},{'title':'World Map Beach - Donkey Kong Country Returns','url':'https://www.youtube.com/watch?v=BFtr7o5wTVc&t=52s'}]}" ></script>
+<!-- SCM Music Player script end -->
+  
+  <script>
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var site_data = JSON.parse(this.responseText);
+      var num_arr = site_data.info.views.toString().split("");
+      var num_str = "";
+      for (i = 0; i < num_arr.length; i++) {
+        num_str += `<img src="images/c` + num_arr[i] + `.gif"/>`;
+        if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+      }
+      document.getElementById("hitcount").innerHTML = num_str;
+    }
+  };
+  xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=dog-sama", true);
+  xhttp.send();
+</script>
+  </body>
+</html>
